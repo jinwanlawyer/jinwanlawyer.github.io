@@ -21,6 +21,22 @@ layout: page
     </div>
   </section>
 </div>
+
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  owner: 'jinwanlawyer',
+  repo: 'one',
+  oauth: {
+    client_id: '794830bf0e33ae55f361',
+    client_secret: 'd17681a29df872ee4ddec06efe0b2339a4e6548d',
+  },
+})
+gitment.render('container')
+</script>
+
 <p class="center-text" style="padding: 30px;">
   <a href="{{ site.baseurl }}/blog">Back to blog</a>
 </p>
